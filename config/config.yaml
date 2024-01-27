@@ -1,0 +1,18 @@
+# ckpt/config options(static)
+blip_path: https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_large.pth
+med_config: ./config/med_config.json
+
+# ckpt/logger options(dynamic)
+checkpoint_base: checkpoint
+visual_base: visualization
+log_base: log
+
+
+# model parameters
+BLIP:
+  # size of vit model; base or large
+  vit: 'large'
+  image_size: 512
+
+ImageReward:
+  mlp_dim: 768
